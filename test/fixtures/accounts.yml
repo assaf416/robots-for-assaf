@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: MyString
+  name: MyString
+  play_list_id: 1
+  no_of_bots: 1
+  algo: MyString
+
+two:
+  uid: MyString
+  name: MyString
+  play_list_id: 1
+  no_of_bots: 1
+  algo: MyString

@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @play_list.name %>
+</p>
+<hr/>
+<%= render "items" %>
+<%= link_to 'Edit', edit_play_list_path(@play_list) %> |
+<%= link_to 'Back', play_lists_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pair:</strong>
+  <%= @play_list_item.pair %>
+</p>
+
+<p>
+  <strong>Params:</strong>
+  <%= @play_list_item.params %>
+</p>
+
+<p>
+  <strong>Play list:</strong>
+  <%= @play_list_item.play_list_id %>
+</p>
+
+<%= link_to 'Edit', edit_play_list_item_path(@play_list_item) %> |
+<%= link_to 'Back', play_list_items_path %>

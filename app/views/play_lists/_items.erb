@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <tr>
+      <th>Pair</th>
+      <th>Params</th>
+      <th>Play list</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @play_list.play_list_items.each do |play_list_item| %>
+      <tr>
+        <td><%= play_list_item.pair %></td>
+        <td><%= play_list_item.params %></td>
+        <td><%= play_list_item.play_list_id %></td>
+        <td><%= link_to 'Show', play_list_item %></td>
+        <td><%= link_to 'Edit', edit_play_list_item_path(play_list_item) %></td>
+        <td><%= link_to 'Destroy', play_list_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

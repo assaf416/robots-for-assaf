@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @account.uid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @account.name %>
+</p>
+
+<p>
+  <strong>Play list:</strong>
+  <%= @account.play_list_id %>
+</p>
+
+<p>
+  <strong>No of bots:</strong>
+  <%= @account.no_of_bots %>
+</p>
+
+<p>
+  <strong>Algo:</strong>
+  <%= @account.algo %>
+</p>
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>
